@@ -1,0 +1,23 @@
+NASCH FINANCE PARA ANDROID
+
+Este paquete prepara la aplicación web original para compilarla como APK Android.
+La compilación se realiza en GitHub Actions, por lo que no necesitas instalar Android Studio en tu teléfono.
+
+PASOS:
+1. Entra en https://github.com/ y crea una cuenta o inicia sesión.
+2. Pulsa el signo + y elige New repository.
+3. Nombre: nasch-finance-android. Selecciona Public o Private y crea el repositorio.
+4. En el repositorio, pulsa Add file > Upload files.
+5. Descomprime este ZIP en tu teléfono/ordenador y sube TODO el contenido de la carpeta, incluida la carpeta .github.
+   Si no ves .github en el administrador de archivos, activa "mostrar archivos ocultos" o realiza la subida desde un ordenador.
+6. Pulsa Commit changes.
+7. Abre la pestaña Actions del repositorio.
+8. Entra en "Build NASCH FINANCE APK" y pulsa Run workflow si no empezó automáticamente.
+9. Espera a que termine en verde. Abre la ejecución y descarga el artefacto NASCH-FINANCE-APK.
+10. Descomprime el artefacto descargado. Dentro estará app-debug.apk. Pásalo al Redmi A5 y ábrelo para instalar.
+
+NOTAS IMPORTANTES:
+- Esta es una APK de depuración (debug), instalable para uso personal. No es una APK publicada en Play Store.
+- La aplicación guarda sus datos en el almacenamiento local de la app mediante localStorage. Desinstalar la app puede borrar esos datos; exporta respaldos desde NASCH FINANCE.
+- El contenido web queda incluido en la APK; no necesita Netlify ni conexión a internet para abrirse.
+- El primer APK se compila en la nube. No hace falta Android Studio en el móvil.
